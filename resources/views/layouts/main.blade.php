@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-includes_index
+
 @include('includes_index.head')
 
 <body>
 
+<div class="container-xxl bg-white p-0">
 
 
-            
     @include('includes_index.Spinner')
 
-    
-@include('includes_index.navbar')
 
-
- 
-
-@yield('content')
-
-
-@include('includes_index.Footer')
+    @include('includes_index.navbar')
 
 
 
 
-@include('includes_index.Footerjs') 
+    @yield('content')
 
- 
- </body>
 
-</html> 
+    @include('includes_index.Footer')
 
+
+
+
+    @include('includes_index.Footerjs')
+</div>
+
+</body>
+
+</html>
