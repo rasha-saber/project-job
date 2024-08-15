@@ -14,6 +14,11 @@ class jobsController extends Controller
         return view('index');
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
