@@ -14,6 +14,42 @@ class jobsController extends Controller
         return view('index');
     }
 
+    //
+    public function indexA()
+    {
+        return view('about');
+    }
+    //
+    public function indexB()
+    {
+        return view('category');
+    }
+    //
+    public function indexC()
+    {
+        return view('job-detail');
+    }
+    //
+    public function indexD()
+    {
+        return view('job-list');
+    }
+    //
+    public function indexF()
+    {
+        return view('testimonial');
+    }
+    //
+    public function indexG()
+    {
+        return view('contact');
+    }
+    //
+    public function indexH()
+    {
+        return view('404');
+    }
+    //
     /**
      * Show the form for creating a new resource.
      */
