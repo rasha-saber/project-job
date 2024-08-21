@@ -8,7 +8,7 @@
 <div class="container-xxl bg-white p-0">
 
 
-    @include('includes_index.Spinner')
+    <!-- @include('includes_index.Spinner') -->
 
 
     @include('includes_index.navbar')
