@@ -1,15 +1,17 @@
-
+@push('pageHeader')
+contact
+@endpush
 
 @extends('layouts.main')
 @push('pageTitle')
-About Us
+contact
 @endpush
 
 
 
 @section('contentContact')
 @include('includes.header')
-@include('includes_contact.Contact')
+@include('includes.Contact')
 @endsection
 
 

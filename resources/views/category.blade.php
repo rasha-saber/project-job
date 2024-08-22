@@ -1,6 +1,10 @@
+@push('pageHeader')
+category
+@endpush
+
 @extends('layouts.main')
 @push('pageTitle')
-About Us
+category
 @endpush
 
 

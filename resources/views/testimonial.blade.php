@@ -1,6 +1,10 @@
+@push('pageHeader')
+testimonial
+@endpush
+
 @extends('layouts.main')
 @push('pageTitle')
-About Us
+testimonial
 @endpush
 
 

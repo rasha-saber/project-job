@@ -1,6 +1,10 @@
+@push('pageHeader')
+job-list
+@endpush
+
 @extends('layouts.main')
 @push('pageTitle')
-About Us
+job-list
 @endpush
 
 

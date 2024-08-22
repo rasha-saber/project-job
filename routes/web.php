@@ -21,7 +21,7 @@ Route::delete('/job/{id}/forcedelete', [jobsController::class, 'forceDelete'])->
 
 
 
-Route::get('/home', [homeController::class, 'index1'])->name('index1');
+Route::get('/home', [homeController::class, 'index1'])->name('index.home');
 Route::get('/about', [homeController::class, 'indexA'])->name('about');
 Route::get('/category', [homeController::class, 'indexB'])->name('category');
 Route::get('/job-detail', [homeController::class, 'indexC'])->name('job-detail');

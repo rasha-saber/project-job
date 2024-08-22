@@ -1,18 +1,18 @@
 @push('pageHeader')
-About Us
+job-detail
 @endpush
 
 @extends('layouts.main')
 @push('pageTitle')
-About Us
+job-detail
 @endpush
 
 
 
 
 @section('contentjob-detail')
-@include('includes_.header')
-@include('includes_job-detail.Detail')
+@include('includes.header')
+@include('includes.Detail')
 @endsection
 
 
