@@ -36,6 +36,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="testimonial-item bg-light rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                         <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
@@ -51,5 +52,3 @@
             </div>
         </div>
         <!-- Testimonial End -->
-
-        
