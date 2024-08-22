@@ -6,8 +6,8 @@ About Us
 
 
 @section('contentjob-list')
-@include('includes_job-list.Header')
-@include('includes_index.Jobs')
+@include('includes.header')
+@include('includes.Jobs')
 @endsection
 
 

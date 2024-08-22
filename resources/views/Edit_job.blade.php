@@ -23,7 +23,7 @@
         <h2 class="fw-bold fs-2 mb-5 pb-2">Edit Job</h2>
         <form action="{{route('job.update', $job->id)}}" method="POST" class="px-md-5" enctype="multipart/form-data">
           @csrf
-          @method('PUT') <!-- استخدام طريقة PUT لتحديث البيانات -->
+          @method('PUT') 
 
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Job Title:</label>

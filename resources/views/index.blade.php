@@ -8,22 +8,22 @@
  @section('content')
 
  
- @include('includes_index.Carousel')
+ @include('includes.Carousel')
 
 
 
- @include('includes_index.Search')
+ @include('includes.Search')
 
 
- @include('includes_index.Category')
+ @include('includes.Category')
 
 
- @include('includes_index.About')
+ @include('includes.About')
 
 
- @include('includes_index.Jobs')
+ @include('includes.Jobs')
 
 
- @include('includes_index.Testimonial')
+ @include('includes.Testimonial')
 
  @endsection

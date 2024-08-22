@@ -6,8 +6,8 @@ About Us
 
 
 @section('contentTestimonial')
-@include('includes_testimonial.Header')
-@include('includes_index.Testimonial')
+@include('includes.header')
+@include('includes.Testimonial')
 @endsection
 
 

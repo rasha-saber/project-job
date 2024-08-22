@@ -9,8 +9,8 @@ About Us
 
 
 @section('contentabout')
-@include('includes_about.Header')
+@include('includes.header')
 
 
-@include('includes_index.About')
+@include('includes.About')
 @endsection

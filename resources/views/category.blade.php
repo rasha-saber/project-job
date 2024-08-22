@@ -6,8 +6,8 @@ About Us
 
 
 @section('contentcategory')
-@include('includes_category.Header')
-@include('includes_index.Category')
+@include('includes.header')
+@include('includes.Category')
 @endsection
 
 
