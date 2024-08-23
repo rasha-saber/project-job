@@ -11,7 +11,7 @@ category
 
 @section('contentcategory')
 @include('includes.header')
-@include('includes.Category')
+@include('includes.category')
 @endsection
 
 

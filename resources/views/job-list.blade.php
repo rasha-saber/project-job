@@ -11,7 +11,7 @@ job-list
 
 @section('contentjob-list')
 @include('includes.header')
-@include('includes.Jobs')
+@include('includes.job')
 @endsection
 
 

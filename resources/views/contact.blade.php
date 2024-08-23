@@ -11,7 +11,7 @@ contact
 
 @section('contentContact')
 @include('includes.header')
-@include('includes.Contact')
+@include('includes.contact')
 @endsection
 
 

@@ -14,8 +14,8 @@ class jobsController extends Controller
      */
     public function index()
     {
-        $job = Job::with('category')->get();
-        return view('jobs',  compact('job'));
+        $jobs = Job::with('category')->get();
+        return view('jobs',  compact('jobs'));
     }
 
     // //
@@ -95,8 +95,8 @@ class jobsController extends Controller
      */
     public function show(string $id)
     {
-        $job = Job::findOrFail($id);
-        return view('job-detail', compact('job'));
+        $jobs = Job::findOrFail($id);
+        return view('job-detail', compact('jobs'));
     }
 
     /**
@@ -104,9 +104,9 @@ class jobsController extends Controller
      */
     public function edit(string $id)
     {
-        $job = Job::findOrFail($id);
+        $jobs = Job::findOrFail($id);
         $categories = Category::select('id', 'category_name')->get();
-        return view('Edit_job', compact('job', 'categories'));
+        return view('Edit_job', compact('jobs', 'categories'));
        // $categories = Category::all();
     //    $categories = Category::select('id', 'category_name')->get();
     //    return view('Edit_job', compact('categories'));

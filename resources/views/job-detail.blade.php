@@ -12,7 +12,7 @@ job-detail
 
 @section('contentjob-detail')
 @include('includes.header')
-@include('includes.Detail')
+@include('includes.detail')
 @endsection
 
 

@@ -17,7 +17,8 @@ return new class extends Migration
             $table->text('description');
             $table->string('location');
             $table->string('job_nature')->nullable();
-            $table->decimal('salary', 8, 2);
+            $table->decimal('min_salary', 8, 2)->nullable();
+            $table->decimal('max_salary', 8, 2)->nullable();
             $table->boolean('published')->default(false);
             $table->integer('Vacancy')->default(1);
             $table->string('img')->nullable();

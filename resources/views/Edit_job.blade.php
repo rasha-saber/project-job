@@ -21,14 +21,14 @@
     <div class="container my-5">
       <div class="bg-light p-5 rounded">
         <h2 class="fw-bold fs-2 mb-5 pb-2">Edit Job</h2>
-        <form action="{{route('job.update', $job->id)}}" method="POST" class="px-md-5" enctype="multipart/form-data">
+        <form action="{{route('job.update', $jobs->id)}}" method="POST" class="px-md-5" enctype="multipart/form-data">
           @csrf
           @method('PUT') 
 
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Job Title:</label>
             <div class="col-md-10">
-              <input type="text" placeholder="Job Title" class="form-control py-2" name="title" value="{{old('title', $job->title)}}" />
+              <input type="text" placeholder="Job Title" class="form-control py-2" name="title" value="{{old('title', $jobs->title)}}" />
 
               @error('title')
               <div class="alert alert-warning">{{$message}}</div>
@@ -39,7 +39,7 @@
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Description:</label>
             <div class="col-md-10">
-              <textarea name="description" id="" cols="30" rows="5" class="form-control py-2">{{old('description', $job->description)}}</textarea>
+              <textarea name="description" id="" cols="30" rows="5" class="form-control py-2">{{old('description', $jobs->description)}}</textarea>
 
               @error('description')
               <div class="alert alert-warning">{{$message}}</div>
@@ -50,7 +50,7 @@
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Location:</label>
             <div class="col-md-10">
-              <input type="text" placeholder="Job Location" class="form-control py-2" name="location" value="{{old('location', $job->location)}}" />
+              <input type="text" placeholder="Job Location" class="form-control py-2" name="location" value="{{old('location', $jobs->location)}}" />
 
               @error('location')
               <div class="alert alert-warning">{{$message}}</div>
@@ -61,7 +61,7 @@
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Salary:</label>
             <div class="col-md-10">
-              <input type="number" step="0.1" placeholder="Enter Salary" class="form-control py-2" name="salary" value="{{old('salary', $job->salary)}}" />
+              <input type="number" step="0.1" placeholder="Enter Salary" class="form-control py-2" name="salary" value="{{old('salary', $jobs->salary)}}" />
 
               @error('salary')
               <div class="alert alert-warning">{{$message}}</div>
@@ -72,14 +72,14 @@
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Published:</label>
             <div class="col-md-10">
-              <input type="checkbox" class="form-check-input" style="padding: 0.7rem;" name="published" {{ old('published', $job->published) ? 'checked' : '' }} />
+              <input type="checkbox" class="form-check-input" style="padding: 0.7rem;" name="published" {{ old('published', $jobs->published) ? 'checked' : '' }} />
             </div>
           </div>
 
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Company Name:</label>
             <div class="col-md-10">
-              <input type="text" placeholder="Company Name" class="form-control py-2" name="company_name" value="{{old('company_name', $job->company_name)}}" />
+              <input type="text" placeholder="Company Name" class="form-control py-2" name="company_name" value="{{old('company_name', $jobs->company_name)}}" />
 
               @error('company_name')
               <div class="alert alert-warning">{{$message}}</div>
@@ -93,7 +93,7 @@
               <select name="category_id" id="category_id" class="form-control">
                 <option value="">Select Category</option>
                 @foreach($categories as $category)
-                <option value="{{$category->id}}" @selected(old('category_id', $job->category_id) == $category->id)>{{$category->category_name}}</option>
+                <option value="{{$category->id}}" @selected(old('category_id', $jobs->category_id) == $category->id)>{{$category->category_name}}</option>
                 @endforeach
               </select>
               @error('category_id')
@@ -105,7 +105,7 @@
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Job Nature:</label>
             <div class="col-md-10">
-              <input type="text" placeholder="Job Nature" class="form-control py-2" name="job_nature" value="{{old('job_nature', $job->job_nature)}}" />
+              <input type="text" placeholder="Job Nature" class="form-control py-2" name="job_nature" value="{{old('job_nature', $jobs->jobs_nature)}}" />
 
               @error('job_nature')
               <div class="alert alert-warning">{{$message}}</div>
@@ -116,7 +116,7 @@
           <div class="form-group mb-3 row">
             <label for="" class="form-label col-md-2 fw-bold text-md-end">Vacancy:</label>
             <div class="col-md-10">
-              <input type="number" placeholder="Number of Vacancies" class="form-control py-2" name="Vacancy" value="{{old('Vacancy', $job->Vacancy)}}" />
+              <input type="number" placeholder="Number of Vacancies" class="form-control py-2" name="Vacancy" value="{{old('Vacancy', $jobs->Vacancy)}}" />
 
               @error('Vacancy')
               <div class="alert alert-warning">{{$message}}</div>
@@ -144,8 +144,8 @@
         </form>
 
 
-        @if(isset($job->img))
-        <img src="{{ asset('assets/img/job/' . $job->img) }}" alt="" width="100">
+        @if(isset($jobs->img))
+        <img src="{{ asset('assets/img/job/' . $jobs->img) }}" alt="" width="100">
         @endif
       </div>
     </div>

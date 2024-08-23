@@ -44,7 +44,7 @@
           </thead>
           <tbody>
           
-         @foreach($job as $job)
+         @foreach($jobs as $job)
             <tr>
               <td scope="row">{{$job['title']}}</td>
               <td>{{ Str::limit($job['description'], 15,'....')}}</td>

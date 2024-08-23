@@ -92,7 +92,7 @@
               <select name="category_id" id="category_id" class="form-control">
                 <option value="">Select Category</option>
                 @foreach($categories as $category)
-                <option value="{{$category->id}}" @selected(old('category_id', $job->category_id ?? '') == $category->id)>{{$category->category_name}}</option>
+                <option value="{{$category->id}}" @selected(old('category_id', $jobs->category_id ?? '') == $category->id)>{{$category->category_name}}</option>
                 @endforeach
               </select>
               @error('category_id')
@@ -141,8 +141,8 @@
             </button>
           </div>
         </form>
-        @if(isset($Job->img))
-         <img src="{{ asset('assets/img/job/' . $job->img) }}" alt="" width="100">
+        @if(isset($Jobs->img))
+         <img src="{{ asset('assets/img/job/' . $jobs->img) }}" alt="" width="100">
          @endif
       </div>
     </div>

@@ -16,5 +16,5 @@ About Us
 @include('includes.header')
 
 
-@include('includes.About')
+@include('includes.about')
 @endsection

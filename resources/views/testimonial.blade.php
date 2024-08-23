@@ -11,7 +11,7 @@ testimonial
 
 @section('contentTestimonial')
 @include('includes.header')
-@include('includes.Testimonial')
+@include('includes.testimonial')
 @endsection
 
 
